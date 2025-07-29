@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <header>
+        <img class="logo" src="assets/assets/logo.png" alt="">
+    </header>
+
+
+    <main>
+        <section>
+            <div>
+               <h1 class="title">Assistente de Metas</h1>
+                <p>Pergunte sobre estrategias, build e dicas para
+                seus jogos</p>
+                
+                <form id="form">
+                    <input id="apiKeyInput" type="password" placeholder="Informe a API key do gemini">
+                    <select id="gameselect">
+                        <option value="">Selecione um jogo</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="League Of Leagends">League Of Leagends</option>
+                    </select>
+
+                    <input id="questionInput" type="text" placeholder="melhor build adc">
+
+                    <button id="askButton" type="submit">
+                        Perguntar
+                    </button>
+                </form>
+
+
+                <div id="aiResponse" class="hidden">
+                    <div class="Response-content">
+
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="javascripts.js"></script>
+</body>
+</html>
